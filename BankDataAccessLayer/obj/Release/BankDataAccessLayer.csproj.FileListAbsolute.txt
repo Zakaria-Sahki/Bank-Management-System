@@ -1,6 +1,0 @@
-C:\Users\Zakaria Sahki\source\repos\BankDataAccessLayer\bin\Release\BankDataAccessLayer.dll
-C:\Users\Zakaria Sahki\source\repos\BankDataAccessLayer\bin\Release\BankDataAccessLayer.pdb
-C:\Users\Zakaria Sahki\source\repos\BankDataAccessLayer\obj\Release\BankDataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\Zakaria Sahki\source\repos\BankDataAccessLayer\obj\Release\BankDataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\Zakaria Sahki\source\repos\BankDataAccessLayer\obj\Release\BankDataAccessLayer.dll
-C:\Users\Zakaria Sahki\source\repos\BankDataAccessLayer\obj\Release\BankDataAccessLayer.pdb
