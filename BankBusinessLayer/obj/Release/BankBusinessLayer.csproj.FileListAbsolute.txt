@@ -1,0 +1,9 @@
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\bin\Release\BankBusinessLayer.dll
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\bin\Release\BankBusinessLayer.pdb
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\bin\Release\BankDataAccessLayer.dll
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\bin\Release\BankDataAccessLayer.pdb
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\obj\Release\BankBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\obj\Release\BankBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\obj\Release\BankBusi.6BD26524.Up2Date
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\obj\Release\BankBusinessLayer.dll
+C:\Users\Zakaria Sahki\source\repos\BankBusinessLayer\obj\Release\BankBusinessLayer.pdb

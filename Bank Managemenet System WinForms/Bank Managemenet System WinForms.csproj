@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEF7652D-10FC-494A-842F-75A6E5657980}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bank_Managemenet_System_WinForms</RootNamespace>
+    <AssemblyName>Bank Managemenet System WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bank.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsControl.Designer.cs">
+      <DependentUpon>AccountsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientsControl.Designer.cs">
+      <DependentUpon>ClientsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsCurrentUser.cs" />
+    <Compile Include="DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindAccount.Designer.cs">
+      <DependentUpon>FindAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindClient.Designer.cs">
+      <DependentUpon>FindClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindUser.Designer.cs">
+      <DependentUpon>FindUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditAccount.Designer.cs">
+      <DependentUpon>frmAddEditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditClient.Designer.cs">
+      <DependentUpon>frmAddEditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditCurrency.Designer.cs">
+      <DependentUpon>frmAddEditCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditPermissions.Designer.cs">
+      <DependentUpon>frmAddEditPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCurrencies.Designer.cs">
+      <DependentUpon>frmCurrencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeposit.Designer.cs">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindCurrency.Designer.cs">
+      <DependentUpon>frmFindCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransfer.Designer.cs">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferLogList.Designer.cs">
+      <DependentUpon>frmTransferLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithdraw.Designer.cs">
+      <DependentUpon>frmWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRegistersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginRegistersControl.Designer.cs">
+      <DependentUpon>LoginRegistersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionsControl.Designer.cs">
+      <DependentUpon>TransactionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransferLogControl.Designer.cs">
+      <DependentUpon>TransferLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl.Designer.cs">
+      <DependentUpon>UsersControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountsControl.resx">
+      <DependentUpon>AccountsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsControl.resx">
+      <DependentUpon>ClientsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardControl.resx">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindAccount.resx">
+      <DependentUpon>FindAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindClient.resx">
+      <DependentUpon>FindClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindUser.resx">
+      <DependentUpon>FindUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditAccount.resx">
+      <DependentUpon>frmAddEditAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditClient.resx">
+      <DependentUpon>frmAddEditClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditCurrency.resx">
+      <DependentUpon>frmAddEditCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditPermissions.resx">
+      <DependentUpon>frmAddEditPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrencies.resx">
+      <DependentUpon>frmCurrencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeposit.resx">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindCurrency.resx">
+      <DependentUpon>frmFindCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransfer.resx">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferLogList.resx">
+      <DependentUpon>frmTransferLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithdraw.resx">
+      <DependentUpon>frmWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegistersControl.resx">
+      <DependentUpon>LoginRegistersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TransactionsControl.resx">
+      <DependentUpon>TransactionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferLogControl.resx">
+      <DependentUpon>TransferLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControl.resx">
+      <DependentUpon>UsersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankBusinessLayer\BankBusinessLayer.csproj">
+      <Project>{d2a0ede8-7353-4382-9121-d62141b1d21c}</Project>
+      <Name>BankBusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank_Icon_-_Free_PNG___SVG_6888665_-_Noun_Project-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank_free_icons_designed_by_Freepik-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\query.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bussiness-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-withdrawal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public-relation %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public-relation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currencies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currencies %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bank.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
