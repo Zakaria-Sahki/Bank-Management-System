@@ -3,7 +3,7 @@
 <h1 align="left"><sub> Project OverView </sub></h1>
 
 This is a simulation of a small bank management system implemented as a Desktop application in C#, 
-It applies core Object-Oriented Programming (OOP) principles and uses Microsoft SQL Server for data storage.
+It applies core Object-Oriented Programming (OOP) principles, WinForms for UI and uses Microsoft SQL Server for data storage.
 
 The project includes several features such as:
 - Client and user management.
